@@ -3,7 +3,7 @@
 
 - Topological sorting using bfs
 - Uses indegree array to count the incoming edges of any node and reduces after visiting its parent
-- 
+
 
 
 ```cpp
