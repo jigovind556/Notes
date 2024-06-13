@@ -44,4 +44,4 @@
 
 ## How to detect a negative cycle ? 
 
-If the any node is non zero ``` mat[i][i] != 0 ``` then it has a negative cycle.
+If the distance of any node from itself is non zero ``` mat[i][i] != 0 ``` then it has a negative cycle.

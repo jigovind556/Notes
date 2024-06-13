@@ -14,10 +14,8 @@
 since in a graph of N nodes,in worst case you will take n-1 edges N-1 edges to reach from first to the last ,therefore we iterate for N-1 time.
 
 ```cpp
-    vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
-        // Code here
-        
-        vector<int> dist(V,1e8);
+    vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {        
+        vector<int> dist(V,1e8); 
         dist[S]=0;
         
         for(int i=0;i<V-1;i++){
@@ -29,7 +27,8 @@ since in a graph of N nodes,in worst case you will take n-1 edges N-1 edges to r
                 }
             }
         }
-        
+
+        // check for the negative circle in the graph        
         for(auto edge : edges){
             if(dist[edge[0]] == 1e8) continue;
             int d= dist [edge[0]] + edge[2];
