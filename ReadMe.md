@@ -6,24 +6,24 @@ Welcome to my notes repository! This repository contains my personal notes on va
 
 The repository is organized into different folders based on the topics. Below is the current folder structure:
 
-```plaintext
-DSA/
-├── Graph/
-│   ├── [Bellmanford.md](DSA/Graph/Bellmanford.md)
-│   ├── [Dijkstra.md](DSA/Graph/Dijkstra.md)
-│   ├── [DisjointSet.md](DSA/Graph/DisjointSet.md)
-│   ├── [FloydWarshal.md](DSA/Graph/FloydWarshal.md)
-│   ├── [KahnsAlgorithm.md](DSA/Graph/KahnsAlgorithm.md)
-│   ├── [MST.md](DSA/Graph/MST.md)
-│   ├── [Prims.md](DSA/Graph/Prims.md)
-│   ├── [ShortestPath.md](DSA/Graph/ShortestPath.md)
-│   ├── [topoSortDFS.md](DSA/Graph/topoSortDFS.md)
-└── Math/
-    └── [PowerOfDouble.md](DSA/Math/PowerOfDouble.md)
-ReadMe.md
-```
+### DSA Directory
+- **DSA/**
+    - **Graph/**
+        - [Bellmanford.md](DSA/Graph/Bellmanford.md)
+        - [Dijkstra.md](DSA/Graph/Dijkstra.md)
+        - [DisjointSet.md](DSA/Graph/DisjointSet.md)
+        - [FloydWarshal.md](DSA/Graph/FloydWarshal.md)
+        - [KahnsAlgorithm.md](DSA/Graph/KahnsAlgorithm.md)
+        - [MST.md](DSA/Graph/MST.md)
+        - [Prims.md](DSA/Graph/Prims.md)
+        - [ShortestPath.md](DSA/Graph/ShortestPath.md)
+        - [topoSortDFS.md](DSA/Graph/topoSortDFS.md)
+    - **Math/**
+        - [PowerOfDouble.md](DSA/Math/PowerOfDouble.md)
 
-## Topics Covered
+
+
+<!-- ## Topics Covered
 
 ### Graph
 - **Bellman-Ford Algorithm**: Notes on the Bellman-Ford algorithm for finding shortest paths in a weighted graph.
@@ -37,7 +37,7 @@ ReadMe.md
 - **Topological Sort using DFS**: Explanation and implementation of topological sorting using Depth-First Search (DFS).
 
 ### Math
-- **Power of Double**: Notes on mathematical concepts related to the power of double.
+- **Power of Double**: Notes on mathematical concepts related to the power of double. -->
 
 ## Contributing
 
