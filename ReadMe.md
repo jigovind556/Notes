@@ -6,7 +6,7 @@ Welcome to my notes repository! This repository contains my personal notes on va
 
 The repository is organized into different folders based on the topics. Below is the current folder structure:
 
-```
+
 DSA/
 ├── Graph/
 │   ├── [Bellmanford.md](DSA/Graph/Bellmanford.md)
@@ -21,7 +21,7 @@ DSA/
 └── Math/
     └── [PowerOfDouble.md](DSA/Math/PowerOfDouble.md)
 ReadMe.md
-```
+
 
 ## Topics Covered
 
