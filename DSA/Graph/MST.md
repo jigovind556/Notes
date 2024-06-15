@@ -6,4 +6,4 @@
 
 ## There are two algorithm to find the MST 
 1. [Prim's Algorighm](./Prims.md)
-2. [Kruskal's Algorithm](./)
+2. [Kruskal's Algorithm](./Krukals.md)

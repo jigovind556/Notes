@@ -5,6 +5,8 @@
 - The union operation merges two sets into a single set.
 - The find operation determines the representative element of a given element.
 
+
+## code with find union by rank
 ```cpp
 class DisjointSet {
     vector<int> rank, parent;
@@ -36,6 +38,45 @@ class DisjointSet {
         } else {
             parent[ulp_v] = ulp_u;
             rank[ulp_u]++;
+        }
+    }
+
+};
+
+```
+
+
+## code with find union by size
+```cpp
+class DisjointSet {
+    vector<int> size, parent;
+
+    public:
+    DisjointSet(int n) {
+        size.resize(n + 1, 1);
+        parent.resize(n + 1);
+        for (int i = 0; i < n + 1; i++) {
+            parent[i] = i;
+        }
+    }
+    int findUPar(int i) {
+        if (parent[i] == i)
+            return i;
+        return parent[i] = findUPar(parent[i]);
+    }
+    void unionBySize(int u, int v) {
+        int ulp_u = findUPar(u);
+        int ulp_v = findUPar(v);
+
+        if (ulp_u == ulp_v)
+            return;
+
+        if (size[ulp_u] < size[ulp_v]) {
+            parent[ulp_u] = ulp_v;
+            size[ulp_v] += size[ulp_u];
+        } else {
+            parent[ulp_v] = ulp_u;
+            size[ulp_v] += size[ulp_u];
         }
     }
 
