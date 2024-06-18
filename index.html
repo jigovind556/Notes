@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .tabs {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+      }
+      .tab {
+        display: none;
+      }
+      .tab-label {
+        cursor: pointer;
+        padding: 10px;
+        margin-right: 10px;
+        background: #f0f0f0;
+        border: 1px solid #ccc;
+        border-bottom: none;
+      }
+      .tab-content-container {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-top: none;
+        display: none;
+      }
+      .tab:checked + .tab-label {
+        background: #fff;
+        border-bottom: 1px solid #fff;
+      }
+      #tab1:checked ~ .content .tab-content-container#content1,
+      #tab2:checked ~ .content .tab-content-container#content2,
+      #tab3:checked ~ .content .tab-content-container#content3 {
+        display: flex;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <input type="radio" id="tab1" name="tabs" class="tab" checked />
+      <label for="tab1" class="tab-label">C++</label>
+
+      <input type="radio" id="tab2" name="tabs" class="tab" />
+      <label for="tab2" class="tab-label">Java</label>
+
+      <input type="radio" id="tab3" name="tabs" class="tab" />
+      <label for="tab3" class="tab-label">Python</label>
+      <div class="container">
+        <div id="content1" class="tab-content-container">
+          <pre><code class="language-cpp">
+  #include &lt;iostream&gt;
+  using namespace std;
+
+  int main() {
+      cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+      return 0;
+  }
+  </code></pre>
+        </div>
+
+        <div id="content2" class="tab-content-container">
+          <pre><code class="language-java">
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Hello, World!");
+      }
+  }
+  </code></pre>
+        </div>
+
+        <div id="content3" class="tab-content-container">
+          <pre><code class="language-python">
+  print("Hello, World!")
+  </code></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
