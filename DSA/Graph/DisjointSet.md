@@ -76,7 +76,7 @@ class DisjointSet {
             size[ulp_v] += size[ulp_u];
         } else {
             parent[ulp_v] = ulp_u;
-            size[ulp_v] += size[ulp_u];
+            size[ulp_u] += size[ulp_v];
         }
     }
     int getSize(int i){
